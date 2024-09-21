@@ -6,6 +6,7 @@ body {
 	font-family: 'Inter';
 	font-style: normal;
 }
+
 .top-header {
 	background-color: white;
 	position: sticky;
@@ -105,8 +106,9 @@ h2 {
 }
 
 #gallery {
-	/*	min-height: 100vh; */
+		min-height: 100vh;
 }
+
 .title{
 	text-align: center;
 	padding-block: 2em;
@@ -164,7 +166,7 @@ h2 {
 	font-weight: 300;
 	/* modifitcation style h1 */
 	font-size: calc(1.375rem + 1.5vw);
-	margin-bottom: 0.5;
+	/* margin-bottom: 0.5; */
 	line-height: 1.2;
 
 }
