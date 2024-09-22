@@ -5,6 +5,11 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+	<!-- preconnect aux ressources externes -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+	<!-- optimisation des styles -->
 	<!-- optimisation bootstrap preload -->
 	<link rel="preload" href="./assets/bootstrap/bootstrap.css" as="style" onload="this.rel='stylesheet'">
 	<noscript><link rel="stylesheet" href="./assets/bootstrap/bootstrap.css"></noscript>
@@ -13,13 +18,12 @@
 	<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"></noscript>
 
 	<link rel="stylesheet" href="./assets/style.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	
 	<!-- ajout balise meta manquantes -->
 	<title>Photographe Nina Carducci - Photographie professionnelle</title>
 	<meta name="description" content="Nina Carducci, photographe professionnelle spécialisée dans les portraits et événements. Découvrez ses galeries et ses services pour immortaliser vos moments.">
 	<meta name="robots" content="index, follow">
+	<!-- meta open graph et twitter -->
 	<meta property="og:title" content="Photographe Nina Carducci - Photographie professionnelle">
   	<meta property="og:description" content="Découvrez les œuvres d'art photographiques de Nina Carducci!">
 	<!-- image crop pour optimisation sur réseaux sociaux 1200x630 -->
@@ -39,9 +43,9 @@
 	<meta name="twitter:image:alt" content="Aperçu de photo de concert par Nina Carducci">
 	<meta name="twitter:url" content="https://gui-agt.github.io/oc-p8-nina-carducci/">
 
-	<script src="./assets/bootstrap/bootstrap.bundle.js"></script>
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	<!-- ajout attribut defer pour optimisation du chargement -->
+	<script src="./assets/bootstrap/bootstrap.bundle.js" defer></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous" defer></script>
 	<script src="./assets/maugallery.js" defer></script>
 	<script src="./assets/scripts.js" defer></script>
 </head>
@@ -59,7 +63,7 @@
 			<li><a href="#services">Services</a></li>
 			<li><a href="#contact">Contact</a></li>
 			<!-- ajout attribut alt et aria-label-->
-			<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank" aria-label="Instagram de Nina Carducci"><img src="assets/images/instagram.png" alt="Lien vers Instagram"></a></li>
+			<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank" aria-label="Instagram de Nina Carducci"><img src="assets/images/instagram.png" width="20" height="20" alt="Lien vers Instagram"></a></li>
 		</ul>
 	</nav>
 </header>
@@ -74,36 +78,39 @@
 		<div class="carousel-inner">
 			<div class="carousel-item active">
 				<!-- ajout attribut alt et srcset et sizes pour optimisation responsive-->
-				<img src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp" 
+				<img src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp"
+				class="d-block w-100" alt="Photo de Ryoji Iwata"
+				width="1920" height="888"
 				srcset="./assets/images/slider/1440/ryoji-iwata-wUZjnOv7t0g-unsplash-1440.webp 1440w, 
 				./assets/images/slider/1280/ryoji-iwata-wUZjnOv7t0g-unsplash-1280.webp 1280w,
 				./assets/images/slider/1024/ryoji-iwata-wUZjnOv7t0g-unsplash-1024.webp 1024w,
 				./assets/images/slider/768/ryoji-iwata-wUZjnOv7t0g-unsplash-768.webp 768w,
 				./assets/images/slider/480/ryoji-iwata-wUZjnOv7t0g-unsplash-480.webp 480w"
-				sizes="100vw"
-				class="d-block w-100" alt="Photo de Ryoji Iwata">
+				sizes="100vw">
 			</div>
 			<div class="carousel-item">
 				<!-- ajout attribut alt et srcset et sizes pour optimisation responsive-->
 				<img src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.webp"
+				class="d-block w-100" alt="Photo de Nicholas Green"
+				width="1920" height="888"
 				srcset="./assets/images/slider/1440/nicholas-green-nPz8akkUmDI-unsplash-1440.webp 1440w,
 				./assets/images/slider/1280/nicholas-green-nPz8akkUmDI-unsplash-1280.webp 1280w,
 				./assets/images/slider/1024/nicholas-green-nPz8akkUmDI-unsplash-1024.webp 1024w,
 				./assets/images/slider/768/nicholas-green-nPz8akkUmDI-unsplash-768.webp 768w,
 				./assets/images/slider/480/nicholas-green-nPz8akkUmDI-unsplash-480.webp 480w"
-				sizes="100vw"
-				class="d-block w-100" alt="Photo de Nicholas Green">
+				sizes="100vw">
 			</div>
 			<div class="carousel-item">
 				<!-- ajout attribut alt et srcset et sizes pour optimisation responsive-->
 				<img src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.webp" 
+				class="d-block w-100" alt="Photo de Edward Cisneros"
+				width="1920" height="888"
 				srcset="./assets/images/slider/1440/edward-cisneros-3_h6-1NPDGw-unsplash-1440.webp 1440w,
 				./assets/images/slider/1280/edward-cisneros-3_h6-1NPDGw-unsplash-1280.webp 1280w,
 				./assets/images/slider/1024/edward-cisneros-3_h6-1NPDGw-unsplash-1024.webp 1024w,
 				./assets/images/slider/768/edward-cisneros-3_h6-1NPDGw-unsplash-768.webp 768w,
 				./assets/images/slider/480/edward-cisneros-3_h6-1NPDGw-unsplash-480.webp 480w"
-				sizes="100vw"
-				class="d-block w-100" alt="Photo de Edward Cisneros">
+				sizes="100vw">
 			</div>
 		</div>
 		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
