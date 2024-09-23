@@ -59,7 +59,7 @@ body {
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  background-color: black;
+  /* background-color: black; */
   width: 2rem;
   height: 2.5rem;
   border-radius: 7px;
