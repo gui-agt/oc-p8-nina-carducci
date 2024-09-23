@@ -4,6 +4,9 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Balise à valider google search console https://search.google.com/search-console/welcome?hl=fr -->
+	<meta name="google-site-verification" content="K8pCtv63oKKrRvudOvUdesmsphG8XmPsTtePox7BZTM" />
+	
 	
 	<!-- preconnect aux ressources externes -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -48,6 +51,7 @@
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous" defer></script>
 	<script src="./assets/maugallery.js" defer></script>
 	<script src="./assets/scripts.js" defer></script>
+
 	<!-- Données de référencement local avec balises schema.org -->
 	<script type="application/ld+json">
 		{
@@ -89,156 +93,159 @@
 		</ul>
 	</nav>
 </header>
-<!-- utilisation balise section -->
-<div id="header">
-	<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-		<div class="carousel-indicators">
-			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-		</div>
-		<div class="carousel-inner">
-			<div class="carousel-item active">
-				<!-- ajout attribut alt, srcset et sizes pour optimisation responsive, width and height -->
-				<img src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp"
-				class="d-block w-100" alt="Photo de Ryoji Iwata"
-				width="1920" height="888"
-				srcset="./assets/images/slider/1440/ryoji-iwata-wUZjnOv7t0g-unsplash-1440.webp 1440w, 
-				./assets/images/slider/1280/ryoji-iwata-wUZjnOv7t0g-unsplash-1280.webp 1280w,
-				./assets/images/slider/1024/ryoji-iwata-wUZjnOv7t0g-unsplash-1024.webp 1024w,
-				./assets/images/slider/768/ryoji-iwata-wUZjnOv7t0g-unsplash-768.webp 768w,
-				./assets/images/slider/480/ryoji-iwata-wUZjnOv7t0g-unsplash-480.webp 480w"
-				sizes="100vw">
+<!-- utilisation balise main -->
+<main>
+	<!-- utilisation balise section -->
+	<div id="header">
+		<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+			<div class="carousel-indicators">
+				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
 			</div>
-			<div class="carousel-item">
-				<!-- ajout attribut alt et srcset et sizes pour optimisation responsive, width and height-->
-				<img src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.webp"
-				class="d-block w-100" alt="Photo de Nicholas Green"
-				width="1920" height="888"
-				srcset="./assets/images/slider/1440/nicholas-green-nPz8akkUmDI-unsplash-1440.webp 1440w,
-				./assets/images/slider/1280/nicholas-green-nPz8akkUmDI-unsplash-1280.webp 1280w,
-				./assets/images/slider/1024/nicholas-green-nPz8akkUmDI-unsplash-1024.webp 1024w,
-				./assets/images/slider/768/nicholas-green-nPz8akkUmDI-unsplash-768.webp 768w,
-				./assets/images/slider/480/nicholas-green-nPz8akkUmDI-unsplash-480.webp 480w"
-				sizes="100vw">
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<!-- ajout attribut alt, srcset et sizes pour optimisation responsive, width and height -->
+					<img src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp"
+					class="d-block w-100" alt="Photo de Ryoji Iwata"
+					width="1920" height="888"
+					srcset="./assets/images/slider/1440/ryoji-iwata-wUZjnOv7t0g-unsplash-1440.webp 1440w, 
+					./assets/images/slider/1280/ryoji-iwata-wUZjnOv7t0g-unsplash-1280.webp 1280w,
+					./assets/images/slider/1024/ryoji-iwata-wUZjnOv7t0g-unsplash-1024.webp 1024w,
+					./assets/images/slider/768/ryoji-iwata-wUZjnOv7t0g-unsplash-768.webp 768w,
+					./assets/images/slider/480/ryoji-iwata-wUZjnOv7t0g-unsplash-480.webp 480w"
+					sizes="100vw">
+				</div>
+				<div class="carousel-item">
+					<!-- ajout attribut alt et srcset et sizes pour optimisation responsive, width and height-->
+					<img src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.webp"
+					class="d-block w-100" alt="Photo de Nicholas Green"
+					width="1920" height="888"
+					srcset="./assets/images/slider/1440/nicholas-green-nPz8akkUmDI-unsplash-1440.webp 1440w,
+					./assets/images/slider/1280/nicholas-green-nPz8akkUmDI-unsplash-1280.webp 1280w,
+					./assets/images/slider/1024/nicholas-green-nPz8akkUmDI-unsplash-1024.webp 1024w,
+					./assets/images/slider/768/nicholas-green-nPz8akkUmDI-unsplash-768.webp 768w,
+					./assets/images/slider/480/nicholas-green-nPz8akkUmDI-unsplash-480.webp 480w"
+					sizes="100vw">
+				</div>
+				<div class="carousel-item">
+					<!-- ajout attribut alt et srcset et sizes pour optimisation responsive, width and height -->
+					<img src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.webp"
+					class="d-block w-100" alt="Photo de Edward Cisneros"
+					width="1920" height="888"
+					srcset="./assets/images/slider/1440/edward-cisneros-3_h6-1NPDGw-unsplash-1440.webp 1440w,
+					./assets/images/slider/1280/edward-cisneros-3_h6-1NPDGw-unsplash-1280.webp 1280w,
+					./assets/images/slider/1024/edward-cisneros-3_h6-1NPDGw-unsplash-1024.webp 1024w,
+					./assets/images/slider/768/edward-cisneros-3_h6-1NPDGw-unsplash-768.webp 768w,
+					./assets/images/slider/480/edward-cisneros-3_h6-1NPDGw-unsplash-480.webp 480w"
+					sizes="100vw">
+				</div>
 			</div>
-			<div class="carousel-item">
-				<!-- ajout attribut alt et srcset et sizes pour optimisation responsive, width and height -->
-				<img src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.webp"
-				class="d-block w-100" alt="Photo de Edward Cisneros"
-				width="1920" height="888"
-				srcset="./assets/images/slider/1440/edward-cisneros-3_h6-1NPDGw-unsplash-1440.webp 1440w,
-				./assets/images/slider/1280/edward-cisneros-3_h6-1NPDGw-unsplash-1280.webp 1280w,
-				./assets/images/slider/1024/edward-cisneros-3_h6-1NPDGw-unsplash-1024.webp 1024w,
-				./assets/images/slider/768/edward-cisneros-3_h6-1NPDGw-unsplash-768.webp 768w,
-				./assets/images/slider/480/edward-cisneros-3_h6-1NPDGw-unsplash-480.webp 480w"
-				sizes="100vw">
-			</div>
-		</div>
-		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-			<!-- modification texte en français pour accessibilité -->
-			<span class="visually-hidden">Précédent</span>
-		</button>
-		<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-			<span class="carousel-control-next-icon" aria-hidden="true"></span>
-			<!-- modification texte en français pour accessibilité -->
-			<span class="visually-hidden">Suivant</span>
-		</button>
-	</div>
-</div>
-<!-- utilisation balise section -->
-<section id="about">
-	<div class="picture left">
-		<!-- attribut alt ajouté -->
-		<img src="./assets/images/nina.webp" width="560" height="559" alt="Photo de Nina Carducci">
-	</div>
-	<div id="about-me">
-		<!-- changement titre h2 pour hiérarchie -->
-		<h2 class="about-me__title">A propos de moi</h2>
-		<!-- changement en paragraphe pour hiérarchie -->
-		 <!-- optimisation SEO et mots clés -->
-		<p class="about-me__introduction">Devenir photographe était pour moi une évidence. Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.</p>
-		<p>Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, nous n’avons qu’une envie : le figer au travers de photographies, que ce soit pour des <strong>photos de mariage</strong>, des <strong>photos portraits</strong> ou de la <strong>photographie professionnelle</strong>, afin de le savourer avec les personnes qui sont importantes à nos yeux, ou le partager au plus grand nombre.</p>
-		<p><strong>Photographe basée à Bordeaux</strong>, je vous prorpose de capturer ces merveilleux moments au travers de mon regard, mon approche, ma technique. Rendre ces moments immortels, afin que vous puissiez y puiser de l’amour, du bonheur, de la tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.</p>
-	</div>
-</section>
-<!-- utilisation balise section -->
-<section id="gallery">
-	<!-- modification du titre en h2 -->
-	<h2 class="title">Portfolio</h2>
-	<div class="container py-3">
-		<div class="gallery" >
-			<!-- style="display: none" -->
-			<!-- ajout de attribut alt sur toutes les photos -->
-			<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.webp" alt="Photo de concert de Aaron Paul">
-			<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.webp" alt="Photo portrait entreprise de Ali Morshed">
-			<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.webp" alt="Photo portrait entreprise de Jason Goodman">
-			<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.webp" alt="Photo de mains liées de Hannah Busing">
-			<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.webp" alt="Photo portrait de Ade Tunji">
-			<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.webp" alt="Photo portrait mariage de Jakob Owens">
-			<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.webp" alt="Photo portrait de Nino Van Prattenburg">
-			<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.webp" alt="Photo de concert de Austin Neill">
-			<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.webp" alt="Photo portrait entreprise de Mateus Campos">
+			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<!-- modification texte en français pour accessibilité -->
+				<span class="visually-hidden">Précédent</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<!-- modification texte en français pour accessibilité -->
+				<span class="visually-hidden">Suivant</span>
+			</button>
 		</div>
 	</div>
+	<!-- utilisation balise section -->
+	<section id="about">
+		<div class="picture left">
+			<!-- attribut alt ajouté -->
+			<img src="./assets/images/nina.webp" width="560" height="559" alt="Photo de Nina Carducci">
+		</div>
+		<div id="about-me">
+			<!-- changement titre h2 pour hiérarchie -->
+			<h2 class="about-me__title">A propos de moi</h2>
+			<!-- changement en paragraphe pour hiérarchie -->
+			<!-- optimisation SEO et mots clés -->
+			<p class="about-me__introduction">Devenir photographe était pour moi une évidence. Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.</p>
+			<p>Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, nous n’avons qu’une envie : le figer au travers de photographies, que ce soit pour des <strong>photos de mariage</strong>, des <strong>photos portraits</strong> ou de la <strong>photographie professionnelle</strong>, afin de le savourer avec les personnes qui sont importantes à nos yeux, ou le partager au plus grand nombre.</p>
+			<p><strong>Photographe basée à Bordeaux</strong>, je vous prorpose de capturer ces merveilleux moments au travers de mon regard, mon approche, ma technique. Rendre ces moments immortels, afin que vous puissiez y puiser de l’amour, du bonheur, de la tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.</p>
+		</div>
+	</section>
+	<!-- utilisation balise section -->
+	<section id="gallery">
+		<!-- modification du titre en h2 -->
+		<h2 class="title">Portfolio</h2>
+		<div class="container py-3">
+			<div class="gallery" >
+				<!-- style="display: none" -->
+				<!-- ajout de attribut alt sur toutes les photos -->
+				<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.webp" alt="Photo de concert de Aaron Paul">
+				<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.webp" alt="Photo portrait entreprise de Ali Morshed">
+				<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.webp" alt="Photo portrait entreprise de Jason Goodman">
+				<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.webp" alt="Photo de mains liées de Hannah Busing">
+				<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.webp" alt="Photo portrait de Ade Tunji">
+				<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.webp" alt="Photo portrait mariage de Jakob Owens">
+				<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.webp" alt="Photo portrait de Nino Van Prattenburg">
+				<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.webp" alt="Photo de concert de Austin Neill">
+				<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.webp" alt="Photo portrait entreprise de Mateus Campos">
+			</div>
+		</div>
+		<div class="quote">
+			<figure>
+				<blockquote>
+					<!-- modification de la balise h1 en p -->
+					<p class="quote__text">Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou qu’un fait est traduit en photo, il cesse d’être un fait pour devenir une opinion. L’inexactitude n’existe pas en photographie. Toutes les photos sont exactes. Aucune d’elles n’est la vérité.</p>
+				</blockquote>
+				<figcaption class="quote__author">- Richard Avedon</figcaption>
+			</figure>
+		</div>
+	</section>
+	<!-- utilisation balise section -->
+	<section id="services">
+		<!-- modification du titre h2 -->
+		<h2 class="title">Mes services</h2>
+		<div class="container">
+			<div class="service">
+				<div class="service__description">
+					<h3>Shooting photo</h3>
+					<p>Pour capturer vos moments les plus précieux et garder un souvenir impérissable. Je me déplace en Île-de-France pour réaliser vos photos</p>
+				</div>
+				<div class="service__price">
+					<h4>350€/demi journée</h4>
+					<span>Matériel, déplacement inclus</span>
+				</div>
+			</div>
+			<div class="service">
+				<div class="service__description">
+					<h3>Retouches</h3>
+					<p>Vous souhaitez retoucher vos photos pour un résultat professionnel ? Bénéficier d’un rendu optimal pour vos publications</p>
+				</div>
+				<div class="service__price">
+					<h4>50€/photo</h4>
+					<span>2 AR par photo</span>
+				</div>
+			</div>
+			<div class="service">
+				<div class="service__description">
+					<h3>Album photos</h3>
+					<p>Partagez avec vos proches et vos clients les photos des moments partagés ensemble à travers un album photo personnalisé</p>
+				</div>
+				<div class="service__price">
+					<h4>400€ album A4</h4>
+					<span>30 pages recto/verso</span>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- utilisation balise section -->
 	<div class="quote">
 		<figure>
 			<blockquote>
-				<!-- modification de la balise h1 en p -->
-				<p class="quote__text">Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou qu’un fait est traduit en photo, il cesse d’être un fait pour devenir une opinion. L’inexactitude n’existe pas en photographie. Toutes les photos sont exactes. Aucune d’elles n’est la vérité.</p>
+				<!-- change <h1> to <p> -->
+				<p class="quote__text">De manière inconsciente, je crois, je guette un regard, une expression, des traits ou une nostalgie capable de résumer ou plus exactement de révéler une vie</p>
 			</blockquote>
 			<figcaption class="quote__author">- Richard Avedon</figcaption>
 		</figure>
 	</div>
-</section>
-<!-- utilisation balise section -->
-<section id="services">
-	<!-- modification du titre h2 -->
-	<h2 class="title">Mes services</h2>
-	<div class="container">
-		<div class="service">
-			<div class="service__description">
-				<h3>Shooting photo</h3>
-				<p>Pour capturer vos moments les plus précieux et garder un souvenir impérissable. Je me déplace en Île-de-France pour réaliser vos photos</p>
-			</div>
-			<div class="service__price">
-				<h4>350€/demi journée</h4>
-				<span>Matériel, déplacement inclus</span>
-			</div>
-		</div>
-		<div class="service">
-			<div class="service__description">
-				<h3>Retouches</h3>
-				<p>Vous souhaitez retoucher vos photos pour un résultat professionnel ? Bénéficier d’un rendu optimal pour vos publications</p>
-			</div>
-			<div class="service__price">
-				<h4>50€/photo</h4>
-				<span>2 AR par photo</span>
-			</div>
-		</div>
-		<div class="service">
-			<div class="service__description">
-				<h3>Album photos</h3>
-				<p>Partagez avec vos proches et vos clients les photos des moments partagés ensemble à travers un album photo personnalisé</p>
-			</div>
-			<div class="service__price">
-				<h4>400€ album A4</h4>
-				<span>30 pages recto/verso</span>
-			</div>
-		</div>
-	</div>
-</section>
-<!-- utilisation balise section -->
-<div class="quote">
-	<figure>
-		<blockquote>
-			<!-- change <h1> to <p> -->
-			<p class="quote__text">De manière inconsciente, je crois, je guette un regard, une expression, des traits ou une nostalgie capable de résumer ou plus exactement de révéler une vie</p>
-		</blockquote>
-		<figcaption class="quote__author">- Richard Avedon</figcaption>
-	</figure>
-</div>
+</main>
 <!-- utilisation balise footer -->
 <footer id="contact">
 	<div class="container">
