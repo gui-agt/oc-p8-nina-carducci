@@ -17,10 +17,15 @@
 	<link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" as="style" onload="this.rel='stylesheet'">
 	<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"></noscript>
 	<!-- optimisation bootstrap preload -->
-	<!-- <link rel="preload" href="./assets/bootstrap/bootstrap.css" as="style" onload="this.rel='stylesheet'"> -->
-	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
+	<link rel="preload" href="./assets/bootstrap/bootstrap.css" as="style" onload="this.rel='stylesheet'">
+	<noscript><link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css"></noscript>
+	<!-- nouveau fichier bootstrap avec code essentiel pour optimisation du rendu -->
+	<link rel="stylesheet" href="./assets/style.essential.min.css">
 	<!-- utilisation du fichier min -->
 	<link rel="stylesheet" href="./assets/style.min.css">
+	<!-- optimisation bootstrap preload code non essentiel en preload -->
+	<link rel="preload" href="./assets/bootstrap/bootstrap.css" as="style" onload="this.rel='stylesheet'">
+	<noscript><link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css"></noscript>
 	
 	<!-- ajout balise meta manquantes -->
 	<title>Photographe Nina Carducci - Photographie professionnelle</title>
