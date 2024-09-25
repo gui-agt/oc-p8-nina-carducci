@@ -199,12 +199,19 @@ h2 {
 	font-family: Spectral;
 	font-style: italic;
 	font-weight: 300;
-	/* modifitcation style h1 */
+	/* modifitcation fit style h1 */
 	font-size: calc(1.375rem + 1.5vw);
 	/* margin-bottom: 0.5; */
 	line-height: 1.2;
-
 }
+
+/* modifitcation fit style h1 */
+@media (min-width: 1200px) {
+	.quote__text {
+		font-size: 2.5rem;
+	}
+}
+
 .quote__author {
 	font-family: Spectral;
 	font-weight: 800;
