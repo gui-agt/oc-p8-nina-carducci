@@ -39,5 +39,10 @@
     </FilesMatch>
 </IfModule>
 
+# Forcer le type MIME pour le sitemap et les fichiers XML
+<FilesMatch "\.xml$">
+    ForceType application/xml
+</FilesMatch>
+
 # Politique de sécurité de contenu
 Header set Content-Security-Policy "script-src 'self';"
