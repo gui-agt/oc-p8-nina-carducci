@@ -7,15 +7,14 @@
 	<!-- Balise à valider google search console https://search.google.com/search-console/welcome?hl=fr -->
 	<meta name="google-site-verification" content="K8pCtv63oKKrRvudOvUdesmsphG8XmPsTtePox7BZTM" />
 	
-	
 	<!-- preconnect aux ressources externes -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 	<!-- optimisation des styles -->
-	 <!-- ajout de rel preload pour optimiser le chargement de la police -->
-	<!-- <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" as="style" onload="this.rel='stylesheet'">
-	<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"></noscript> -->
+	<!-- ajout de rel preload pour optimiser le chargement de la police -->
+	<link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" as="style" onload="this.rel='stylesheet'">
+	<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"></noscript>
 
 	<!-- optimisation bootstrap preload -->
 	
@@ -267,7 +266,8 @@
 				<!-- ajout aria-label -->
 				<input type="text" name="nom" id="nom" aria-label="Nom">
 				<label for="email">Email</label>
-				<input type="email" name="email" id="email" aria-label="Email">
+				<!-- ajout de attribut autocomplete -->
+				<input type="email" name="email" id="email" aria-label="Email" autocomplete="email">
 				<label for="message">Message</label>
 				<textarea name="message" id="message" cols="30" rows="10" aria-label="Message"></textarea>
 				<input type="submit" value="Envoyer">
