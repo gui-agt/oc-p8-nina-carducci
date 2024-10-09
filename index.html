@@ -4,6 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
 	<!-- Balise à valider google search console https://search.google.com/search-console/welcome?hl=fr -->
 	<meta name="google-site-verification" content="K8pCtv63oKKrRvudOvUdesmsphG8XmPsTtePox7BZTM" />
 	
@@ -15,22 +16,16 @@
 	<!-- ajout de rel preload pour optimiser le chargement de la police -->
 	<link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" as="style" onload="this.rel='stylesheet'">
 	<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"></noscript>
-
-	<!-- optimisation bootstrap preload -->
-	
 	<!-- nouveau fichier bootstrap avec code essentiel pour optimisation du rendu -->
 	<link rel="stylesheet" href="./assets/bootstrap.essential.css">
-	<!-- optimisation bootstrap preload code non essentiel en preload -->
-	<!-- <link rel="preload" href="./assets/bootstrap/bootstrap.min.css" as="style" onload="this.rel='stylesheet'">
-	<noscript><link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css"></noscript> -->
 	<!-- utilisation du fichier min -->
 	<link rel="stylesheet" href="./assets/style.min.css">
 	
-	<!-- ajout balise meta manquantes -->
+	<!-- ajout balise meta manquantes title et meta-->
 	<title>Photographe Nina Carducci - Photographie professionnelle</title>
 	<meta name="description" content="Nina Carducci, photographe professionnelle spécialisée dans les portraits et événements. Découvrez ses galeries et ses services pour immortaliser vos moments.">
 	<meta name="robots" content="index, follow">
-	<!-- meta open graph et twitter -->
+	<!-- meta open graph -->
 	<meta property="og:title" content="Photographe Nina Carducci - Photographie professionnelle">
   	<meta property="og:description" content="Découvrez les œuvres d'art photographiques de Nina Carducci!">
 	<!-- image crop pour optimisation sur réseaux sociaux 1200x630 -->
@@ -50,8 +45,7 @@
 	<meta name="twitter:image:alt" content="Aperçu de photo de concert par Nina Carducci">
 	<meta name="twitter:url" content="https://gui-agt.github.io/oc-p8-nina-carducci/">
 
-	<!-- ajout attribut defer pour optimisation du chargement -->
-	<!-- utilisation du fichier min -->
+	<!-- ajout attribut defer pour optimisation du chargement et utilisation fichier min -->
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous" defer></script>
 	<script src="./assets/bootstrap/bootstrap.bundle.min.js" defer></script>
 	<script src="./assets/maugallery.min.js" defer></script>
@@ -163,10 +157,7 @@
 	<!-- utilisation balise section -->
 	<section id="about">
 		<div class="picture left">
-			<!-- attribut alt ajouté -->
-			<!-- <img src="./assets/images/nina.webp" width="560" height="559" alt="Photo de Nina Carducci"
-			srcset="./assets/images/nina-468.webp 468w" 
-			sizes="(max-width: 650px) 100vw, 560px"> -->
+			<!-- attribut alt ajouté, srcset et sizes pour optimisation responsive, width and height -->
 			<img src="./assets/images/nina.webp" width="560" height="559" alt="Photo de Nina Carducci"
     		srcset="./assets/images/nina-468.webp 650w, ./assets/images/nina.webp 560w"
     		sizes="(max-width: 650px) 100vw, 560px">
@@ -188,7 +179,7 @@
 		<div class="container py-3">
 			<!-- suppression style="display: none" -->
 			<div class="gallery">
-				<!-- ajout de attribut alt sur toutes les photos  et redimensionnement images-->
+				<!-- ajout de attribut alt sur toutes les photos et redimensionnement images avec srcset et sizes width et height -->
 				<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.webp" alt="Photo de concert de Aaron Paul" width="440" height="440"
 				srcset="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash-240.webp 991w,
 				./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.webp 575w" 
@@ -221,15 +212,10 @@
 				srcset="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash-240.webp 991w,
 				./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.webp 575w" 
 				sizes="(max-width: 575px) 100vw, (max-width: 991px) 100vw, 440px">
-				<!-- <img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.webp" alt="Photo portrait entreprise de Mateus Campos" width="440" height="440"
-				srcset="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash-240.webp 991w,
-				./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.webp 575w" 
-				sizes="(max-width: 575px) 100vw, (max-width: 991px) 100vw, 440px"> -->
 				<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.webp" alt="Photo portrait entreprise de Mateus Campos" width="440" height="440"
 				srcset="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash-240.webp 240w,
 				./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.webp 440w" 
 				sizes="(min-width: 1400px) 424px, (min-width: 1200px) 364px, (min-width: 1000px) 304px, (min-width: 780px) 224px, (min-width: 580px) 254px, calc(100vw - 16px)">
-				<!-- sizes="(max-width: 575px) 440px, (max-width: 991px) 240px, 440px" -->
 			</div>
 		</div>
 		<div class="quote">
@@ -316,6 +302,5 @@
 		</div>
 	</div>
 </footer>
-
 </body>
 </html>
